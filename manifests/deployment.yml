@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: mhassaansaeedpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mhassaansaeedpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: mhassaansaeedpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: mhassaansaeedpipelinesjavascriptdocker 
+          image: mhsreg.azurecr.io/mhassaansaeedpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
