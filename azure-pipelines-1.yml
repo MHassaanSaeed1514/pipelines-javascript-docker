@@ -5,7 +5,7 @@ trigger:
           vmImage: 'windows-latest' 
 
         variables:
-          imageName: 'pipelines-javascript-docker'
+          imageName: 'pipelines-javascript-docker (1)'
 
         steps:
         - task: Docker@2
