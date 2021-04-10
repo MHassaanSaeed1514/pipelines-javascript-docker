@@ -1,8 +1,8 @@
 trigger:
         - main
 
-        --pool:
-          vmImage: 'windows-latest' # set to windows-latest or another Windows vmImage for Windows builds
+        pool:
+          vmImage: 'windows-latest' 
 
         variables:
           imageName: 'pipelines-javascript-docker'
